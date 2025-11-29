@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""Student module"""
+"""Student class module"""
+
 
 class Student:
-    """Defines a student with first_name, last_name, and age"""
+    """Defines a student with first_name, last_name, age"""
 
     def __init__(self, first_name, last_name, age):
         self.first_name = first_name
@@ -10,5 +11,6 @@ class Student:
         self.age = age
 
     def to_json(self):
-        """Returns the dictionary representation of the student"""
+        """Return dictionary representation of Student instance"""
         return self.__dict__.copy()
+
